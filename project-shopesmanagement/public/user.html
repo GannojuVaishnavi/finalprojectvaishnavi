@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USER PAGE</title>
+    <link href="./ucss.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28ec243a89.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <!-- <img src="images\zudiologo.jpg" alt="Example Image" height="50px" width="400"> -->
+            <h2 style="padding-left: 40px;"> Store Locator </h2>
+            <div id="top">
+                <button id="logout" onclick="logout()">LOGOUT</button>
+            </div>
+        </div>
+        <br>
+        <div></div><br>
+        <div id="locationselect">
+            <h2>FIND THE TOP ZUDIO STORE NEAR YOU:</h2>
+            <select id="enter-location">
+                <option selected>SELECT LOCATION</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Andhra pradesh">Andra Pradesh</option>
+                <option value="New delhi">New Delhi</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Madhya pradesh">Madhya pradesh</option>
+            </select>
+            <button id="getshops" onclick="userlocation()"
+                style="height: 50px;width: 50px;border: none"><i
+                    class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <br>
+        <div id="detailsandmap" style="visibility: hidden;">
+            <div id="moredetails">
+
+            </div>
+            <div id="mapContainer">
+
+
+            </div>
+        </div>
+        <div id="container">
+
+        </div>
+
+        
+        <script src="./ujs.js"></script>
+    </div>
+
+</body>
+
+</html>

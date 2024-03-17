@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN PAGE</title>
+    <link href="./acss.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/28ec243a89.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="top">
+        <button id="logout" onclick="logout()">LOGOUT</button>
+        
+            <h2 style="margin-left: 44%;margin-top: 5px;padding-top: 35px;" >Admin Page</h2>
+
+    </div>
+    <div id="box">
+        <div id="box1">
+            <div id="usermanagediv"><u>
+                    <h3>manage users</h3>
+                </u>
+                <button onclick="showUsers()" class="main">Get All Users</button>
+            </div>
+            <div id="shopsdiv"><u>
+                    <h3>manage shops</h3>
+                </u>
+
+                <button onclick="getAllShops()">Get All Shops</button><br>
+                <button onclick="createShop()">Create Shop</button><br>
+
+            </div>
+        </div>
+
+        <div id="box2">
+
+            <div id="formdiv" style="display: none;">
+                <form id="shopform" style="visibility: hidden;"><u>
+                        <div style="padding-left: 25%;">Shop Details</div>
+                    </u><br>
+                    <!-- <lable for="id">ID:</lable>
+                    <input type="number" id="id"><br> -->
+                    <lable for="name">NAME:</lable>
+                    <input type="text" id="name"><br>
+                    <lable for="loc">LOCATION:</lable>
+                    <input type="text" id="loc"><br>
+                    <lable for="contno">CONTACT_NUMBER:</lable>
+                    <input type="text" id="contno"><br>
+                    <lable for="openhrs">OPENING_HOURS:</lable>
+                    <input type="text" id="openhrs"><br>
+                    <lable for="updateat">onmap</lable>
+                    <input type="text" id="onmap"><br>
+
+                    <lable for="website">WEBSITE:</lable>
+                    <input type="text" id="website"><br>
+                    <lable for="rate">RATING:</lable>
+                    <input type="number" id="rate"><br>
+                    <!-- <lable for="src">SRC:</lable>
+                    <input type="text" id="src"><br> -->
+
+                </form>
+            </div>
+
+            <div id="userTablediv" style="display:none;">
+                <h3><u>Users Database:</u></h3>
+                <table id="usersTable" style="visibility: hidden;">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Verified</th>
+                            <th>Accept req</th>
+                            <th>Reject req</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="shopsTableAdmindiv" style="display: none;">
+                <!-- <h4><u>Shops Database:</u></h4> -->
+                <div id="container" style="display: none;">
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <script src="./ajs.js"></script>
+</body>
+
+</html>

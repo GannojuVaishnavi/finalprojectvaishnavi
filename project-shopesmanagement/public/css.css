@@ -1,0 +1,120 @@
+#userloginform {
+  font-size: 20px;
+  margin-left: 35%;
+  margin-top: 10%;
+  width: 400px;
+  padding-left: 60px;
+  
+  box-shadow: 0px 0px  10px 2px black;
+  
+height:500px;
+padding-top: 20px;
+
+  
+}
+
+input#username,input#email{
+
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  height:40px;
+  width:300px;
+  /* padding:15px; */
+  border:none;
+  border-bottom:1px solid black ;
+
+  /* margin: 15px; */
+  
+}
+input#username::placeholder,input#email::placeholder { 
+  /* color: white; */
+  /* padding-left: 5px; */
+  text-align: left;
+ }
+
+input#request,input#register{
+  height:40px;
+  width:300px;
+  border-radius: 50px;
+  font-size: 20px;
+  /* border:none;
+  border-bottom:1px solid black ; */
+  background-color: antiquewhite;
+
+}
+
+body {
+  background-image: url('./images/360_F_648825223_TBcDqLeHKE8uHkhTJq43YFS3opzTF0KJ.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  /* font-family: "cursive"; */
+
+}
+
+.chooserole {
+  margin: 4px;
+  /* font-size: 20px; */
+  /* height: 35px;
+  text-align: center; */
+  background-color: aquamarine;
+}
+/* input#user{
+  background-color: aquamarine;
+  font-size: 20px;
+
+} */
+
+.fields{
+/* background-color: aquamarine; */
+  width: 250px;
+  height: 35px;
+  /* border-radius: 5px; */
+}
+
+/* #request {
+  height: auto;
+  font-size: 25px;
+  width: 75px;
+} */
+
+#request:hover {
+  background-color: rgb(100, 100, 229);
+}
+
+#register {
+  height: auto;
+  font-size: 25px;
+  width: fit-content;
+}
+
+#request {
+  height: auto;
+  font-size: 25px;
+  width: fit-content;
+  margin: 5px;
+}
+
+#register:hover {
+  background-color: rgb(100, 100, 229);
+}
+
+select {
+  height: 25px;
+  width: 75px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: solid black 1px;
+}
+
+input {
+  background-color: transparent;
+}
+
+
+
+input#user,input#admin{
+  width:25px;
+  height:25px;
+}

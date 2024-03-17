@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <link href="./css.css" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/28ec243a89.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <form id="userloginform">
+        <label for="username" > <i class="fa-regular fa-user"></i> User Name:</label><br>
+        <input type="text" id="username" placeholder=" type your name" class="fields"><br><br>
+        <label for="email"><i class="fa-regular fa-envelope"></i> Email:</label><br>
+        <input type="email" id="email" placeholder=" type your email"  class="fields"><br><br>
+        <label for="role">Choose role:</label><br>
+        <!-- <input type="radio" id="role"> -->
+        <input type="radio" id="user" value="user" name="chooserole">
+          <label for="user">User</label>
+        <input type="radio" id="admin" value="admin" name="chooserole">
+          <label for="admin">Admin</label>
+
+        
+        <br><br>
+        <input type="button" id="request" value="login"><br>
+        <p style="padding-left: 150px;">--or--</p>
+        <input type="button" id="register" value="sign-up"><br>
+    </form>
+    <script src="./js.js"></script>
+   
+</body>
+
+</html>
+
