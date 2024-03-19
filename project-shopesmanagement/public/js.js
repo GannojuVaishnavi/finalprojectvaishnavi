@@ -89,7 +89,7 @@ function checkUserStatus(uname, uemail) {
         console.log(token);
 
         localStorage.setItem("token", token);
-        window.location.href = "user.html";
+        window.location.href = "https://finalprojectvaishnavi-14.onrender.com/user.html";
       }
 
     }
@@ -126,7 +126,7 @@ function checkAdmin(name, email) {
         let token = res.token;
         console.log(token);
         localStorage.setItem("tokenadmin", token);
-        window.location.href = "admin.html";
+        window.location.href = "https://finalprojectvaishnavi-14.onrender.com/admin.html";
       }
 
     }
