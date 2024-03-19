@@ -16,21 +16,7 @@ db.connect((err) => {
   console.log('Connected to the database');
 });
 
-// ------------------shops database configuration---------------
-const udb = mysql.createConnection({
-  host: config.uconfig.host,
-  user: config.uconfig.user,
-  password: config.uconfig.password,
-  database: config.uconfig.database
-});
 
-udb.connect((err) => {
-  if (err) {
-    console.error('Error connecting to the database', err);
-    return;
-  }
-  console.log('Connected to the database');
-});
 // ---------------------
 
 function userregister(user, callback) {
@@ -78,14 +64,14 @@ exports.checkUserStatus = checkUserStatus;
 
 function getAllShopsloc(location,callback) {
   // let location='hyderabad';
-  udb.query('SELECT * FROM shopes WHERE location LIKE ?',['%'+location+'%'], callback);
+  db.query('SELECT * FROM shopes WHERE location LIKE ?',['%'+location+'%'], callback);
   // udb.query('SELECT * FROM shopes', callback);
 }
 exports.getAllShopsloc = getAllShopsloc;
 
 
 function getAllShops(callback){
-  udb.query('SELECT * FROM shopes ',callback);
+  db.query('SELECT * FROM shopes ',callback);
 }
 exports.getAllShops=getAllShops;
 
@@ -111,7 +97,7 @@ exports.deleteUserRequest = deleteUserRequest;
 
 // deleting shop
 function deleteShop(Id, callback) {
-  udb.query('DELETE FROM shopes WHERE id = ?', Id, callback);
+  db.query('DELETE FROM shopes WHERE id = ?', Id, callback);
 };
 exports.deleteShop = deleteShop;
 
@@ -119,7 +105,7 @@ exports.deleteShop = deleteShop;
 
 // update shop
 function updateShop(Id, updatedShop, callback) {
-  udb.query('UPDATE shopes SET ? WHERE id = ?', [updatedShop, Id], callback);
+  db.query('UPDATE shopes SET ? WHERE id = ?', [updatedShop, Id], callback);
 };
 
 exports.updateShop = updateShop;
@@ -128,7 +114,7 @@ exports.updateShop = updateShop;
 // creating shop
 
 function createShop(shop, callback) {
-  udb.query(
+  db.query(
     `INSERT INTO shopes ( name, location,contact_number,opening_hours,on_maps,website,rating) VALUES ('${shop.name}', '${shop.location}','${shop.contact_number}','${shop.opening_hours}','${shop.on_maps}','${shop.website}','${shop.rating}')`,
     callback
   );
