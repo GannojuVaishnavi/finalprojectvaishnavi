@@ -25,7 +25,7 @@ function getAllShopsloc(location) {
 
   // console.log(location);
   const token = localStorage.getItem("token");
-  fetch(`http://sql.freedb.tech:3330/shops/${location}`, {
+  fetch(`https://sql.freedb.tech:3330/shops/${location}`, {
     method: 'GET',
     headers: {
       'Authorization': 'Bearer ' + token
