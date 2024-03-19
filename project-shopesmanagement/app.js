@@ -3,7 +3,7 @@ const app = express();
 
 const bodyparser = require('body-parser');
 const routes = require('./routes/shop');
-const port = 3330;
+const port = 3306;
 
 app.use(bodyparser.json());
 app.use(routes);
