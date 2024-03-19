@@ -1,18 +1,9 @@
 let config = {
-	"host": "localhost",
-	"user": "root",
-	"password": "root",
-	"database": "userslist"
+	"host": "sql.freedb.tech",
+	"user": "freedb_mysqlroot",
+	"password": "Uh!y6xB9?zRdRvZ",
+	"database": "freedb_mydatabas"
 }
 
 exports.config = config;
-
-let uconfig = {
-	"host": "localhost",
-	"user": "root",
-	"password": "root",
-	"database": "shopeslist"
-}
-
-exports.uconfig = uconfig;
 
