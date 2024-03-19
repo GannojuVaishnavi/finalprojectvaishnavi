@@ -83,7 +83,7 @@ function getAllShops() {
         }
         else {
             const token=localStorage.getItem("tokenadmin");
-        fetch('https://sql.freedb.tech:3330/shops',{
+        fetch('https://sql.freedb.tech:3306/shops',{
         method:"GET",
         headers: {
             'Authorization': 'Bearer ' + token
