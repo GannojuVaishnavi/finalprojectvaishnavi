@@ -37,7 +37,7 @@ function sendregister() {
     email: document.getElementById("email").value,
   }
   console.log(data);
-  fetch("https://sql.freedb.tech:3330/user", {
+  fetch("https://sql.freedb.tech:3306/user", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
@@ -63,7 +63,7 @@ function checkUserStatus(uname, uemail) {
     email: uemail
   }
 
-  fetch(`https://sql.freedb.tech:3330/login`,
+  fetch(`https://sql.freedb.tech:3306/login`,
     {
       method: "POST",
       body: JSON.stringify(data),
@@ -102,7 +102,7 @@ function checkAdmin(name, email) {
     email: email
   }
 
-  fetch(`https://sql.freedb.tech:3330/admin`,
+  fetch(`https://sql.freedb.tech:3306/admin`,
     {
       method: "POST",
       body: JSON.stringify(data),
