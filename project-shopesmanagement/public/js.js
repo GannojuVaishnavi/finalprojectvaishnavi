@@ -63,7 +63,7 @@ function checkUserStatus(uname, uemail) {
     email: uemail
   }
 
-  fetch(`https://finalprojectvaishnavi-15.onrender.com/login`,
+  fetch(`https://finalprojectvaishnavi-16.onrender.com/login`,
     {
       method: "POST",
       body: JSON.stringify(data),
