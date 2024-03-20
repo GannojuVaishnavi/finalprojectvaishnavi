@@ -37,7 +37,7 @@ function sendregister() {
     email: document.getElementById("email").value,
   }
   console.log(data);
-  fetch("https://sql.freedb.tech:3306/user", {
+  fetch("https://finalprojectvaishnavi-16.onrender.com/user", {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
@@ -89,7 +89,7 @@ function checkUserStatus(uname, uemail) {
         console.log(token);
 
         localStorage.setItem("token", token);
-        window.location.href = "https://finalprojectvaishnavi-14.onrender.com/user.html";
+        window.location.href = "https://finalprojectvaishnavi-16.onrender.com/user.html";
       }
 
     }
@@ -102,7 +102,7 @@ function checkAdmin(name, email) {
     email: email
   }
 
-  fetch(`https://sql.freedb.tech:3306/admin`,
+  fetch(`https://finalprojectvaishnavi-16.onrender.com/admin`,
     {
       method: "POST",
       body: JSON.stringify(data),
@@ -126,7 +126,7 @@ function checkAdmin(name, email) {
         let token = res.token;
         console.log(token);
         localStorage.setItem("tokenadmin", token);
-        window.location.href = "https://finalprojectvaishnavi-14.onrender.com/admin.html";
+        window.location.href = "https://finalprojectvaishnavi-16.onrender.com/admin.html";
       }
 
     }

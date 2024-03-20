@@ -24,7 +24,7 @@ exports.checkUserStatus = (req, res) => {
  
   model.checkUserStatus(user, (err, result) => {
     if (err) {
-      console.error("Error finding user by this id", err);
+      console.log("Error finding user by this id", err);
       res.status(500).send("Error finding user");
       res.status(404).send("user is not found");
       return;

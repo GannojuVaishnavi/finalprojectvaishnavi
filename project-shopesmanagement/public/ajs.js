@@ -15,7 +15,7 @@ function showUsers() {
 
     console.log(token);
     if (token) {
-        fetch("https://sql.freedb.tech:3306/users",{
+        fetch("https://finalprojectvaishnavi-16.onrender.com/users",{
             method:"get",
             headers: {
                 'Authorization': 'Bearer ' + token
@@ -83,7 +83,7 @@ function getAllShops() {
         }
         else {
             const token=localStorage.getItem("tokenadmin");
-        fetch('https://sql.freedb.tech:3306/shops',{
+        fetch('https://finalprojectvaishnavi-16.onrender.com/shops',{
         method:"GET",
         headers: {
             'Authorization': 'Bearer ' + token
@@ -235,7 +235,7 @@ function updateShop(id) {
             rating: document.getElementById('rate').value,
         }
 
-        fetch(`https://sql.freedb.tech:3306/shop/${id}`, {
+        fetch(`https://finalprojectvaishnavi-16.onrender.com/shop/${id}`, {
             method: "PUT",
             body: JSON.stringify(data),
             headers: {
@@ -252,7 +252,7 @@ function updateShop(id) {
 }
 function deleteShop(id) {
     if (token) {
-        fetch(`https://sql.freedb.tech:3306/shop/${id}`, {
+        fetch(`https://finalprojectvaishnavi-16.onrender.com/shop/${id}`, {
             method: "DELETE"
         })
             .then(response => {
@@ -270,7 +270,7 @@ function acceptUserRequest(id) {
             verified: "true"
         }
 
-        fetch(`https://sql.freedb.tech:3306/user/${id}`, {
+        fetch(`https://finalprojectvaishnavi-16.onrender.com/user/${id}`, {
             method: "PUT",
             body: JSON.stringify(data),
             headers: {
@@ -317,7 +317,7 @@ function acceptUserRequest(id) {
 
 function deleteUserRequest(email) {
     if (token) {
-        fetch(`https://sql.freedb.tech:3306/user/${email}`, {
+        fetch(`https://finalprojectvaishnavi-16.onrender.com/user/${email}`, {
             method: "DELETE"
         })
             .then(response => {
@@ -368,7 +368,7 @@ console.log(document.getElementById("shopform").contains(document.getElementById
             rating: document.getElementById('rate').value,
 
         }
-        fetch("https://sql.freedb.tech:3306/shop", {
+        fetch("https://finalprojectvaishnavi-16.onrender.com/shop", {
             method: "POST",
             body: JSON.stringify(data),
             headers: {
